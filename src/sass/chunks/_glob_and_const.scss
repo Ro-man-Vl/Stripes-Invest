@@ -1,0 +1,91 @@
+
+// ---------- Typography ----------
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Regular.woff2') format('woff2'),
+         url('../font/Montserrat-Regular.woff') format('woff'),
+         url('../font/Montserrat-Regular.ttf') format('truetype'),
+         url('../font/Montserrat-Regular.eot') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+};
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-bold.woff2') format('woff2'),
+         url('../font/Montserrat-bold.woff') format('woff'),
+         url('../font/Montserrat-bold.ttf') format('truetype'),
+         url('../font/Montserrat-bold.eot') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+};
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Bold.woff2') format('woff2'),
+         url('../font/Poppins-Bold.woff') format('woff'),
+         url('../font/Poppins-Bold.ttf') format('truetype'),
+         url('../font/Poppins-Bold.eot');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+};
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Bold.woff2') format('woff2'),
+         url('../font/Roboto-Bold.woff') format('woff'),
+         url('../font/Roboto-Bold.ttf') format('truetype'),
+         url('../font/Roboto-Bold.eot');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+};
+
+$main-font: 'Montserrat', sans-serif;
+$h1-font: 'Poppins', sans-serif;
+$button-font: 'Roboto', sans-serif;
+
+// ---------- Color ----------
+
+$dark-color: #000000;
+$light-color: #ffffff;
+$twilight-color: #b3b3b3;
+$accent-color: #7d1eff;
+$title-color: #ede8ff;
+$text-color: #ddc9ff;
+
+// ---------- Other constants ----------
+
+$section-gap: 200px;
+
+// ---------- Global settings ----------
+
+html {
+    font-size: 10px;
+    font-family: $main-font;
+    scroll-behavior: smooth;
+    background-color: $dark-color;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: $title-color;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $text-color;
+}
+

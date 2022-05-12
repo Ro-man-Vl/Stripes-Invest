@@ -23,12 +23,12 @@ const gulpif = require("gulp-if");
 const scss = () => {
     return src(plugins.css, {sourcemaps: app.isDev})
         .pipe(src(path.scss.src, {sourcemaps: app.isDev}))
-        .pipe(plumber({
-            errorHandler: notify.onError(error => ({
-                title: "SCSS",
-                message: error.message
-            }))
-        }))
+        // .pipe(plumber({
+        //     errorHandler: notify.onError(error => ({
+        //         title: "SCSS",
+        //         message: error.message
+        //     }))
+        // }))
         .pipe(concat('main.css'))
         .pipe(sass())
         .pipe(webpCss())

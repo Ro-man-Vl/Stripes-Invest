@@ -1,0 +1,101 @@
+.header {
+
+    &__wrapper {
+        position: absolute;
+        top: 29px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    &__logo-wrapper {
+        max-width: 140px;
+        max-height: 70px;
+    }
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__menu-wrapper {
+        width: 360px;
+        margin-left: 170px;
+    }
+
+    &__menu-list {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $light-color;
+    }
+
+
+
+    &__menu-item:hover {
+        color: $twilight-color;
+        transition: all .3s;
+    }
+
+    &__links-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 290px;
+    }
+
+    &__links-social {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        & svg {
+            fill: $accent-color
+        }
+    }
+
+    &__links-form {
+        display: none;
+    }
+
+    &__links-search {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        & svg {
+            fill: $accent-color
+        }
+    }
+
+    &__links-button {
+        padding: 0 45px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $accent-color;
+        cursor: pointer;
+        margin-right: -5px;
+        transition: all .3s;
+    }
+
+    &__links-button:hover {
+        background-color: $light-color;
+
+        & .header__button-link {
+            color: $accent-color;
+        }
+    }
+
+    &__button-link {
+        font-family: $button-font;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $light-color;
+        text-transform: uppercase;
+        line-height: 4rem;
+        letter-spacing: 0.1rem;
+    }
+}
