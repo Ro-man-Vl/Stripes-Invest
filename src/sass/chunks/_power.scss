@@ -1,0 +1,70 @@
+.power {
+    padding: $section-gap 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__img {
+        max-width: 448px;
+        max-height: 675px;
+        margin-top: 60px;
+        margin-left: 8px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content-field {
+        max-width: 500px;
+        padding-top: 111px;
+        padding-left: 39px;
+    }
+
+    &__title {
+        line-height: 4rem;
+    }
+
+    &__list {
+        padding-top: 8px;
+    }
+
+    &__list-block {
+        margin-top: 90px;
+        display: flex;
+        justify-content: flex-start;
+        transition: all .5s;
+    }
+
+    &__list-block:hover {
+        transform: translateX(15px);
+    }
+
+    &__block-icon {
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+        margin-right: 35px;
+
+        & svg {
+            width: 100%;
+            height: 100%;
+            fill: $accent-color;
+            stroke: $accent-color;
+        }
+    }
+
+    &__block-subtitle {
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: $title-color;
+    }
+
+    &__block-text {
+        font-size: 1.4rem;
+        color: $text-color;
+    }
+}

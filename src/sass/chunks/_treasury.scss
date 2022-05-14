@@ -1,0 +1,67 @@
+.treasury {
+    padding-bottom: $section-gap;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 35px;
+    }
+
+    &__content {
+        padding-top: 50px;
+        max-width: 485px;
+    }
+
+    &__title {
+        line-height: 4rem;
+        margin-bottom: 105px;
+    }
+
+    &__block {
+        margin-top: 63px;
+    }
+
+    &__subtitle {
+        color: $title-color;
+        font-weight: 700;
+    }
+
+    &__text {
+        color: $text-color;
+        font-size: 1.6rem;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    &__block {
+        border-bottom: 1px solid $title-color;
+    }
+
+    &__rate-amount {
+        color: $twilight-color;
+        font-size: 1.4rem;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+
+    &__rate-line {
+        display: block;
+        height: 5px;
+        background-color: $accent-color;
+        position: relative;
+        top: 3px;
+    }
+
+    &__img {
+        max-width: 448px;
+        max-height: 675px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+}
