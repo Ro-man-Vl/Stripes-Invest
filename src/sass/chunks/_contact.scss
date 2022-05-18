@@ -1,0 +1,25 @@
+.contact {
+    padding: calc($section-gap * 0.6);
+    background-image: url(../img/benefits-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        max-width: 1436px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 4px;
+        padding-bottom: 25px;
+        
+    }
+
+    &__title {
+        text-transform: uppercase;
+        padding-top: 10px;
+        margin-left: -248px;
+    }
+}

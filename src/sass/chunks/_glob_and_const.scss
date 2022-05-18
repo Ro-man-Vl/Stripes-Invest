@@ -25,6 +25,17 @@
 
 @font-face {
     font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.woff2') format('woff2'),
+         url('../font/Poppins-Regular.woff') format('woff'),
+         url('../font/Poppins-Regular.ttf') format('truetype'),
+         url('../font/Poppins-Regular.eot');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+};
+
+@font-face {
+    font-family: 'Poppins';
     src: url('../font/Poppins-Bold.woff2') format('woff2'),
          url('../font/Poppins-Bold.woff') format('woff'),
          url('../font/Poppins-Bold.ttf') format('truetype'),
@@ -53,9 +64,10 @@ $button-font: 'Roboto', sans-serif;
 
 $dark-color: #000000;
 $light-color: #ffffff;
-$twilight-color: #7a7a7a;
+$twilight-color: #8d8d8d;
 $accent-color: #7d1eff;
 $title-color: #ede8ff;
+$title-hover-color: #b3b3b3;
 $text-color: #ddc9ff;
 
 // ---------- Other constants ----------
@@ -94,3 +106,26 @@ h4 {
     text-transform: uppercase;
 }
 
+form {
+
+    & label {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $title-color;
+        margin-bottom: 14px;
+    }
+
+    & input {
+        width: 370px;
+        padding: 0 20px;
+        font-family: $h1-font;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 4.8rem;
+        color: $twilight-color;
+        background-color: $light-color;
+        border: 1px solid #e3e3e3;
+        border-radius: 10px;
+    }
+}
