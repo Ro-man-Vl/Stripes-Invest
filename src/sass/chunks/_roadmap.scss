@@ -1,0 +1,107 @@
+.roadmap {
+    padding: calc($section-gap * 0.75) 0;
+
+    &__title {
+        padding-top: 27px;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__wrapper {
+        position: relative;
+        padding-bottom: 25px;
+            
+        &::before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            background-color: rgba(172,172,172,0.4);
+            border-radius: 10px;
+            left: 50%;
+            margin-left: -2px;
+        }
+    }
+
+    &__quarter {
+        min-height: 226px;
+        padding-top: 25px;
+        width: 50%;
+    }
+
+    &__quarter--left {
+        margin-right: auto;
+
+        & .roadmap__quarter-head {
+            margin-right: -12px;
+        }
+
+        & .roadmap__quarter-pointer {
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-left: 11px solid $light-color;
+            border-bottom: 7px solid transparent;
+            margin: 0px 13px 0 24px;
+        }
+    
+        
+        & .roadmap__quarter-text {
+            text-align: end;
+            padding-right: 59px;
+            margin-left: auto;
+        }
+    }
+
+    &__quarter--right {
+        margin-left: auto;
+
+        & .roadmap__quarter-head {
+            flex-flow: row-reverse;
+            margin-left: -10px;
+        }
+
+        & .roadmap__quarter-pointer {
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-right: 11px solid $light-color;
+            border-bottom: 7px solid transparent;
+            margin: 0px 23px 0 11px;
+        }
+        
+        & .roadmap__quarter-text {
+            text-align: start;
+            padding-left: 59px;
+            margin-right: auto;
+        }
+    }
+
+    &__quarter-head {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__quarter-title {
+        color: $title-color;
+    }
+
+    &__quarter-point {
+        width: 22px;
+        height: 22px;
+        background-color: $accent-color;
+        border-radius: 50%;
+        border: 4px solid $light-color;
+        z-index: 2;
+    }
+
+    &__quarter-text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.8;
+        color: $text-color;
+        max-width: 560px;
+    }
+}
