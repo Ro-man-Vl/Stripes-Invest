@@ -35,15 +35,15 @@
 
     &__content-button {
         width: fit-content;
-        padding: 0 70px;
         text-align: center;
         border-radius: 10px;
         background-color: $accent-color;
         cursor: pointer;
-        transition: all .3s;
+        transition: all .5s;
     }
 
     &__content-link {
+        padding: 0 70px;
         font-family: $button-font;
         font-size: 1.9rem;
         font-weight: 700;
@@ -58,6 +58,7 @@
 
         & .hero__content-link {
             color: $accent-color;
+            transition: all .5s;
         }
     }
 
