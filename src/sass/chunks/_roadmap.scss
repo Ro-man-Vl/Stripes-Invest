@@ -1,5 +1,7 @@
 .roadmap {
     padding: calc($section-gap * 0.75) 0;
+    background-image: url(../img/tech-bg.jpg);
+    background-size: cover;
 
     &__title {
         padding-top: 27px;
