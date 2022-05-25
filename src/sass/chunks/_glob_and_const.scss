@@ -1,12 +1,11 @@
-
 // ---------- Typography ----------
 
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-Regular.woff2') format('woff2'),
-         url('../font/Montserrat-Regular.woff') format('woff'),
-         url('../font/Montserrat-Regular.ttf') format('truetype'),
-         url('../font/Montserrat-Regular.eot') format('opentype');
+        url('../font/Montserrat-Regular.woff') format('woff'),
+        url('../font/Montserrat-Regular.ttf') format('truetype'),
+        url('../font/Montserrat-Regular.eot') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -15,9 +14,9 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('../font/Montserrat-bold.woff2') format('woff2'),
-         url('../font/Montserrat-bold.woff') format('woff'),
-         url('../font/Montserrat-bold.ttf') format('truetype'),
-         url('../font/Montserrat-bold.eot') format('opentype');
+        url('../font/Montserrat-bold.woff') format('woff'),
+        url('../font/Montserrat-bold.ttf') format('truetype'),
+        url('../font/Montserrat-bold.eot') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -26,9 +25,9 @@
 @font-face {
     font-family: 'Poppins';
     src: url('../font/Poppins-Regular.woff2') format('woff2'),
-         url('../font/Poppins-Regular.woff') format('woff'),
-         url('../font/Poppins-Regular.ttf') format('truetype'),
-         url('../font/Poppins-Regular.eot');
+        url('../font/Poppins-Regular.woff') format('woff'),
+        url('../font/Poppins-Regular.ttf') format('truetype'),
+        url('../font/Poppins-Regular.eot');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -37,9 +36,9 @@
 @font-face {
     font-family: 'Poppins';
     src: url('../font/Poppins-Bold.woff2') format('woff2'),
-         url('../font/Poppins-Bold.woff') format('woff'),
-         url('../font/Poppins-Bold.ttf') format('truetype'),
-         url('../font/Poppins-Bold.eot');
+        url('../font/Poppins-Bold.woff') format('woff'),
+        url('../font/Poppins-Bold.ttf') format('truetype'),
+        url('../font/Poppins-Bold.eot');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -48,9 +47,9 @@
 @font-face {
     font-family: 'Roboto';
     src: url('../font/Roboto-Bold.woff2') format('woff2'),
-         url('../font/Roboto-Bold.woff') format('woff'),
-         url('../font/Roboto-Bold.ttf') format('truetype'),
-         url('../font/Roboto-Bold.eot');
+        url('../font/Roboto-Bold.woff') format('woff'),
+        url('../font/Roboto-Bold.ttf') format('truetype'),
+        url('../font/Roboto-Bold.eot');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -74,6 +73,12 @@ $text-color: #ddc9ff;
 
 $section-gap: 200px;
 
+// ---------- Variables ----------
+
+:root {
+    --section-gap: 200px
+}
+
 // ---------- Global settings ----------
 
 html {
@@ -83,10 +88,23 @@ html {
     background-color: $dark-color;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+h1 {
+    font-family: $h1-font;
+    font-size: 6rem;
+    font-weight: bold;
+    color: $title-color;
+    letter-spacing: 0.1rem;
+    line-height: 7rem;
 }
 
 h2 {
@@ -127,5 +145,53 @@ form {
         background-color: $light-color;
         border: 1px solid #e3e3e3;
         border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width:1530px) {
+
+    :root {
+        --section-gap: 150px
+    }
+}
+
+@media only screen and (max-width:1279px) {
+    
+    h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    h2 {
+        font-size: 3.8rem;
+    }
+}
+
+@media only screen and (max-width:1023px) {
+
+    :root {
+        --section-gap: 100px
+    }
+    
+    h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+    }
+
+    
+}
+
+@media only screen and (max-width:768px) {
+
+    :root {
+        --section-gap: 75px
+    }
+    
+    h3 {
+        font-size: 1.6rem;
     }
 }

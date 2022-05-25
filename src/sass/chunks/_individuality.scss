@@ -1,5 +1,5 @@
 .individuality {
-    padding: calc($section-gap * 0.75) 0;
+    padding: calc(var(--section-gap) * 0.75) 0;
     background-image: url(../img/tech-bg.jpg);
     background-size: cover;
 
@@ -60,6 +60,51 @@
             width: 21px;
             height: 21px;
             background-color: $accent-color;
+        }
+    }
+}
+
+@media only screen and (max-width:1279px) {
+
+    .individuality {
+
+        &__title {
+            padding-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        &__gallery-wrapper {
+            padding: 30px 10px 0;
+        }
+    }
+}
+
+@media only screen and (max-width:1023px) {
+
+    .individuality {
+
+        &__title {
+            padding-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        &__gallery-wrapper {
+            padding: 25px 10px 0;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .individuality {
+
+        &__title {
+            padding-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        &__gallery-wrapper {
+            padding: 20px 10px 0;
         }
     }
 }

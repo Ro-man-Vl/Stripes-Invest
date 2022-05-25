@@ -7,25 +7,11 @@
         right: 30px;
         border: 2px solid $light-color;
         border-radius: 50%;
+        z-index: 9;
     }
 
-    &__wrapper::before,
-    &__wrapper::after   {
-        content: '';
-        position: absolute;
-        width: 24px;
-        height: 2px;
-        background-color: $light-color;
-        top: 53%;
-    }
-
-    &__wrapper::before {
-        transform: rotate(315deg) translateX(27%);
-    }
-
-    &__wrapper::after {
-        transform: rotate(45deg) translateX(-27%);
-        left: 50%;
+    &__wrapper--disabled {
+       z-index: 0;
     }
 
     &__wrapper:hover {
@@ -38,5 +24,33 @@
         display: block;
         width: 50px;
         height: 50px;
+    }
+    
+    &__link::before,
+    &__link::after   {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: $light-color;
+        top: 53%;
+    }
+
+    &__link::before {
+        transform: rotate(315deg) translateX(27%);
+    }
+
+    &__link::after {
+        transform: rotate(45deg) translateX(-27%);
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .move-up__wrapper:hover {
+        background-color: transparent;
+        border-color: $light-color;
+        transition: all .5s;
     }
 }

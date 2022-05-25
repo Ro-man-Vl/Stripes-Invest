@@ -1,0 +1,67 @@
+
+//  ----- Button parameters -----
+
+$btn-width: 40px;
+$btn-height: 25px;
+$stroke-height: 2px;
+$btn-color: $accent-color;
+
+//  -----------------------------
+
+@media only screen and (max-width:768px) {
+
+    .burger-menu-btn {
+        position: relative;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: $btn-width;
+        height: $btn-height;
+    }
+
+
+    .burger-menu-btn::before,
+    .burger-menu-btn::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        background-color: $btn-color;
+        height: $stroke-height;
+        left: 0;
+        transition: all .3s ease 0s;
+    }
+
+    .burger-menu-btn::before {
+        top: 0;
+    }
+
+    .burger-menu-btn::after {
+        bottom: 0;
+        transform: rotate(180deg);
+    }
+
+    .burger-menu-btn span {
+        position: absolute;
+        width: 100%;
+        background-color: $btn-color;
+        height: $stroke-height;
+        left: 0;
+        top: calc($btn-height/2 - $stroke-height/2);
+    }
+
+    // ----- Burger button "on click" transformation -----
+
+    .burger-menu-btn--active::before {
+        transform: rotate(45deg);
+        top: 11px;
+    }
+
+    .burger-menu-btn--active::after {
+        transform: rotate(315deg);
+        bottom: 11px;
+    }
+
+    .burger-menu-btn--active span {
+        transform: scale(0);
+    }
+}
