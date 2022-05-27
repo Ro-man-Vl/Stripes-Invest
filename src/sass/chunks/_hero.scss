@@ -1,6 +1,7 @@
 .hero {
 
     padding-top: 145px;
+    padding-bottom: calc(var(--section-gap) * 0.25);
 
     &__wrapper {
         display: flex;
@@ -147,7 +148,6 @@
             min-width: 0;
             text-align: center;
             margin-top: 25px;
-            margin-bottom: 10px;
         }
 
         &__content-button {

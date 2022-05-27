@@ -235,6 +235,7 @@
             top: 326px;
             justify-content: flex-start;
             padding-left: 20px;
+            padding-right: 20px;
         }
     }
 
@@ -243,6 +244,10 @@
         &__input,
         &__submit {
             line-height: 40px;
+        }
+
+        &__input {
+            margin-right: 10px;
         }
     }
 }

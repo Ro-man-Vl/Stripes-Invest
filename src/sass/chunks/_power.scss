@@ -1,5 +1,5 @@
 .power {
-    padding: $section-gap 0;
+    padding: var(--section-gap) 0;
 
     &__wrapper {
         display: flex;
@@ -66,5 +66,77 @@
     &__block-text {
         font-size: 1.4rem;
         color: $text-color;
+    }
+}
+
+@media only screen and (max-width:1530px) {
+
+    .power {
+
+        &__img {
+            margin-top: 30px;
+        }
+
+        &__content-field {
+            padding-top: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width:1279px) {
+
+    .power {
+
+        &__list-block {
+            margin-top: 70px;
+        }
+
+        &__img {
+            margin-top: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width:1023px) {
+
+    .power {
+
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__img {
+            margin-left: 0;
+        }
+
+        &__content-field {
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+
+        &__title {
+            max-width: 440px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .power {
+        
+        padding-bottom: 0;
+
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        &__content-field {
+            padding: 0;
+        }
+
+        &__list-block {
+            margin-top: 50px;
+        }
     }
 }
