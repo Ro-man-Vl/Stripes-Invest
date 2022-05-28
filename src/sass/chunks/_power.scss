@@ -129,10 +129,16 @@
 
         &__wrapper {
             flex-direction: column-reverse;
+            padding-left: 10px;
         }
 
         &__content-field {
             padding: 0;
+        }
+
+        &__title {
+            margin: 0 auto;
+            text-align: center;
         }
 
         &__list-block {

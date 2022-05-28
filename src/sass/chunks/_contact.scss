@@ -1,25 +1,91 @@
 .contact {
-    padding: calc($section-gap * 0.6);
+    padding: calc(var(--section-gap) * 0.6) 0;
     background-image: url(../img/benefits-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 
     &__container {
-        max-width: 1436px;
+        max-width: 2030px;
     }
 
     &__wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
-        padding-top: 4px;
-        padding-bottom: 25px;
+        padding: 4px 50px 25px;
         
     }
 
     &__title {
         text-transform: uppercase;
         padding-top: 10px;
-        margin-left: -248px;
+        margin-right: 50px;
+    }
+
+    &__input {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:1530px) {
+
+    .contact {
+
+        &__input {
+            width: 380px;
+        }
+    }
+}
+
+@media only screen and (max-width:1279px) {
+
+    .contact {
+
+        &__wrapper {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .contact {
+
+        &__wrapper {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        &__title {
+            margin: 0 auto 20px;
+            text-transform: none;
+        }
+
+        &__form {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .contact {
+
+        &__wrapper {
+            margin-left: 10px;
+        }
+        
+        &__title {
+            margin: 0 auto 20px 0;
+            text-transform: none;
+        }
+
+        &__form {
+            margin: 0 auto 0 0;
+        }
+        
+        &__input {
+            width: 260px;
+        }
     }
 }

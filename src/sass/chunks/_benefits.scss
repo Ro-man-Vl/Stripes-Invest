@@ -1,6 +1,6 @@
 .benefits {
-    padding-top: calc(0.4 * $section-gap);
-    padding-bottom: calc(0.685 * $section-gap);
+    padding-top: calc(0.4 * var(--section-gap));
+    padding-bottom: calc(0.685 * var(--section-gap));
     background-image: url(../img/benefits-bg.png);
     background-size: cover;
 
@@ -42,7 +42,7 @@
         flex-basis: 475px;
         border-radius: 10px;
         background-size: cover;
-        background-position: center center;
+        background-position: center top;
     }
 
     &__link {
@@ -55,10 +55,91 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        padding: 5px 0;
         transition: all .3s;
     } 
 
     &__link:hover {
         transform: scale(1.02);
+    }
+}
+
+@media only screen and (max-width:1279px) {
+
+    .benefits {
+
+        &__title {
+            padding-top: 20px;
+            margin-bottom: 40px;
+        }
+        
+        &__link {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+@media only screen and (max-width:1023px) {
+
+    .benefits {
+
+        &__title {
+            padding-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        &__block {
+            padding: 125px 10px 95px;
+        }
+        
+        &__link {
+            font-size: 2.0rem;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .benefits {
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        &__block {
+            padding: 0;
+            flex-basis: 0px;
+            padding: 205px 40px 130px;
+            width: 65%;
+        }
+
+        &__title {
+            max-width: 350px;
+            text-align: center;
+            margin: 0 auto 30px auto;
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .benefits {
+
+        &__wrapper {
+            gap: 20px;
+        }
+
+        &__block {
+            padding: 145px 10px 75px;
+            width: 85%;
+        }
+
+        &__title {
+            max-width: 350px;
+            text-align: center;
+            margin: 0 auto 30px auto;
+        }
     }
 }

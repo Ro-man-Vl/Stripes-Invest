@@ -160,3 +160,10 @@
         }
     }
 }
+
+@media only screen and (max-width:450px) {
+
+    .hero__content-title {
+        letter-spacing: initial;
+    }
+}

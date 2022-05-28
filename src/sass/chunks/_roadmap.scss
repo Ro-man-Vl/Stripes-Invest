@@ -1,7 +1,8 @@
 .roadmap {
-    padding: calc($section-gap * 0.75) 0;
+    padding: calc(var(--section-gap) * 0.75) 0;
     background-image: url(../img/tech-bg.jpg);
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
 
     &__title {
         padding-top: 27px;
@@ -105,5 +106,53 @@
         line-height: 1.8;
         color: $text-color;
         max-width: 560px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .roadmap {
+
+        &__wrapper {
+            max-width: 450px;
+            margin: 0 auto;
+            padding-left: 12px;
+        }
+        
+        &__wrapper::before {
+            left: 12px;
+        }
+        
+        &__quarter {
+            margin: 0;
+            width: 100%;
+        }
+
+        &__quarter--left {
+
+            & .roadmap__quarter-head {
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+                margin-right: 0;
+                margin-left: -10px;
+            }
+
+            & .roadmap__quarter-pointer {
+                width: 0;
+                height: 0;
+                border-top: 7px solid transparent;
+                border-right: 11px solid $light-color;
+                border-bottom: 7px solid transparent;
+                margin: 0px 23px 0 11px;
+                border-left: none;
+            }
+
+            & .roadmap__quarter-text {
+                text-align: start;
+                padding-left: 59px;
+                padding-right: 0;
+                margin-right: auto;
+            }
+        }
     }
 }

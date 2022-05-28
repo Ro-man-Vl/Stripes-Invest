@@ -98,12 +98,12 @@
         }
 
         &__content {
-            padding-top: 40px;
-            padding-bottom: 50px;
+           padding: 40px 10px 50px;
         }
 
         &__title {
-            margin: 0;
+            margin: 0 auto;
+            text-align: center;
             max-width: 400px;
         }
 
