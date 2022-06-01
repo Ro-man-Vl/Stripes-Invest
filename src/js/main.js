@@ -33,6 +33,10 @@ $(function () {
     ]
   });
 
+  // ----- Animation on scroll plugin -----
+
+  AOS.init();
+
   // ----- On scroll transformation -----
 
   var prevScrollPos = window.scrollY;
