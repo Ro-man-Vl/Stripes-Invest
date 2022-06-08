@@ -10,7 +10,7 @@ const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
 const concat = require("gulp-concat");
 const size = require("gulp-size");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const gulpif = require("gulp-if");
 
 
